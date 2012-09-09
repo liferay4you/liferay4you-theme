@@ -12,9 +12,23 @@ body {
 	max-width: 90%;
 	min-width: 960px;
 	margin: auto;
+	margin-top: 15px;
 }
 
-
+h2.page-title {
+	display:none;
+}
+#skip-to-content {
+	display: none;
+}
+nav#breadcrumbs.site-breadcrumbs h1 {
+	display: none;
+}
+.site-title {
+	max-width: 90%;
+	min-width: 960px;
+	margin: 18px auto 0 auto;
+}
 h1, h2 {
 	font-family: 'Cabin Condensed', sans-serif;
 }
@@ -47,7 +61,7 @@ hr, .separator {
 #banner {
 	background: none;
 	height: auto;
-	margin-top: -2.4em;
+	margin-top: -20px;
 	position: relative;
 	width: 100%;
 	background: url("@theme_image_path@/header-bg.png") repeat-x white;
@@ -128,7 +142,7 @@ hr, .separator {
 	min-height: 2.2em;
 	position: relative;
 	z-index: 1;
-	width: 90%;
+	max-width: 90%;
 	min-width: 960px;
 }
 
