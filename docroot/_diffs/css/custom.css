@@ -119,12 +119,24 @@ hr, .separator {
 }
 
 #sign-in {
-	background: url(@theme_image_path@/common/key.png) no-repeat 3px 50%;
-	font-weight: bold;
+	background: url("@theme_image_path@/logged_in.png") no-repeat scroll 3px 50% transparent;
+	color: white;
+	font-family: 'Cabin Condensed',sans-serif;
+	font-size: 1.3em;
+	font-weight: normal;
 	padding: 5px 5px 5px 25px;
-	position: absolute;
-	right: 0;
-	top: -1.2em;
+ 	position: absolute;
+	right: 6%;
+	text-decoration: none;
+	top: 30px;
+}
+
+#sign-in.sign-out {
+	background: url("@theme_image_path@/logged_out.png") no-repeat scroll 3px 50% transparent;
+}
+
+#sign-in:hover {
+	text-decoration: underline;
 }
 
 .ie6 #banner {
@@ -472,4 +484,34 @@ hr, .separator {
 	-webkit-border-bottom-left-radius: 0;
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
+}
+
+
+
+
+/* ------------ Custom ------------ */
+.portlet-blogs .entry-date {
+	float: left;
+}
+
+.portlet-blogs .entry-title {
+	clear: both;
+}
+
+.portlet-blogs .entry-author {
+	background: none;
+	border-left: 1px solid #999999;
+	border-right: none;
+	padding-left: 5px;
+	margin-left: 10px;
+}
+
+.portlet-blogs .entry-body {
+	clear: both;
+}
+
+.site-title .portlet-language {
+	position: absolute;
+	top: 5px;
+	right: 6%;
 }

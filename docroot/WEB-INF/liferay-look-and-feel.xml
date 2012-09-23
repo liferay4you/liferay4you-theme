@@ -3,7 +3,7 @@
 
 <look-and-feel>
 	<compatibility>
-		<version>6.1.1+</version>
+		<version>6.1+</version>
 	</compatibility>
 	<theme id="liferay4you" name="Liferay4you" />
 </look-and-feel>

@@ -29,6 +29,11 @@ $theme.include($body_top_include)
 				<a class="$logo_css_class" href="$site_default_url" title="#language("go-to") $site_name">
 					<img alt="liferay4you logo" height="70px" src="$images_folder/logo.png" width="350px" />
 				</a>
+				
+				#set ($languagePortletId = "82_INSTANCE_MAIN")
+				$velocityPortletPreferences.setValue("portlet-setup-show-borders", "false")
+				$theme.runtime($languagePortletId, null, $velocityPortletPreferences.toString())
+				$velocityPortletPreferences.reset()
 
 				#if ($show_site_name)
 					<span class="site-name" title="#language("go-to") $site_name">
@@ -44,6 +49,10 @@ $theme.include($body_top_include)
 
 		#if (!$is_signed_in)
 			<a href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a>
+		#else
+			<a href="$sign_out_url" class="sign-out" id="sign-in" rel="nofollow">
+				$sign_out_text, $user_name
+			</a>
 		#end
 
 		#if ($has_navigation || $is_signed_in)
